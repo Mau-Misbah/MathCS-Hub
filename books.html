@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكتب والمراجع | Math & CS Hub</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">∑</span>
+                <span class="logo-text">Math & CS Hub</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="semesters.html">السمسترات</a>
+                <a href="courses.html">المقررات</a>
+                <a href="videos.html">الفيديوهات</a>
+                <a href="books.html" class="active">الكتب والمراجع</a>
+                <a href="about.html">عن الموقع</a>
+                <a href="contact.html">تواصل معنا</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="search.html" class="icon-btn" title="بحث">🔍</a>
+                <a href="login.html" class="btn btn-outline">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>الكتب والمراجع</h1>
+            <p>مكتبة رقمية تحتوي على أهم الكتب والمراجع الدراسية.</p>
+        </div>
+    </section>
+
+    <section class="filter-bar">
+        <div class="container filter-content">
+
+            <div class="filter-group">
+                <label>التصنيف:</label>
+                <select id="filterCategory">
+                    <option value="">الكل</option>
+                    <option value="math">رياضيات</option>
+                    <option value="stats">إحصاء</option>
+                    <option value="cs">علوم حاسوب</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>بحث:</label>
+                <input type="text" id="filterSearch" placeholder="اسم الكتاب أو المؤلف...">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="grid grid-4" id="booksGrid">
+
+                <div class="card book-card" data-category="stats">
+                    <div class="book-cover">📊</div>
+                    <h3>Introduction to Statistics</h3>
+                    <p class="book-author">Sheldon Ross</p>
+                    <span class="book-tag">إحصاء</span>
+                    <a href="#" class="btn btn-primary">تحميل</a>
+                </div>
+
+                <div class="card book-card" data-category="stats">
+                    <div class="book-cover">📈</div>
+                    <h3>Statistical Inference</h3>
+                    <p class="book-author">George Casella</p>
+                    <span class="book-tag">إحصاء</span>
+                    <a href="#" class="btn btn-primary">تحميل</a>
+                </div>
+
+                <div class="card book-card" data-category="math">
+                    <div class="book-cover">🧮</div>
+                    <h3>Calculus — Early Transcendentals</h3>
+                    <p class="book-author">James Stewart</p>
+                    <span class="book-tag">رياضيات</span>
+                    <a href="#" class="btn btn-primary">تحميل</a>
+                </div>
+
+                <div class="card book-card" data-category="math">
+                    <div class="book-cover">📐</div>
+                    <h3>Linear Algebra and Its Applications</h3>
+                    <p class="book-author">David C. Lay</p>
+                    <span class="book-tag">رياضيات</span>
+                    <a href="#" class="btn btn-primary">تحميل</a>
+                </div>
+
+                <div class="card book-card" data-category="cs">
+                    <div class="book-cover">💻</div>
+                    <h3>Introduction to Algorithms</h3>
+                    <p class="book-author">Cormen, Leiserson</p>
+                    <span class="book-tag">علوم حاسوب</span>
+                    <a href="#" class="btn btn-primary">تحميل</a>
+                </div>
+
+                <div class="card book-card" data-category="cs">
+                    <div class="book-cover">🖥️</div>
+                    <h3>Clean Code</h3>
+                    <p class="book-author">Robert C. Martin</p>
+                    <span class="book-tag">علوم حاسوب</span>
+                    <a href="#" class="btn btn-primary">تحميل</a>
+                </div>
+
+                <div class="card book-card" data-category="cs">
+                    <div class="book-cover">🗄️</div>
+                    <h3>Database System Concepts</h3>
+                    <p class="book-author">Silberschatz</p>
+                    <span class="book-tag">علوم حاسوب</span>
+                    <a href="#" class="btn btn-primary">تحميل</a>
+                </div>
+
+                <div class="card book-card" data-category="cs">
+                    <div class="book-cover">🤖</div>
+                    <h3>Artificial Intelligence: A Modern Approach</h3>
+                    <p class="book-author">Russell & Norvig</p>
+                    <span class="book-tag">علوم حاسوب</span>
+                    <a href="#" class="btn btn-primary">تحميل</a>
+                </div>
+
+            </div>
+
+            <p id="noResults" class="no-results">لا توجد نتائج مطابقة.</p>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div>
+                <h3>Math & CS Hub</h3>
+                <p>بوابة تعليمية لكلية العلوم الرياضية والحاسوب.</p>
+            </div>
+
+            <div>
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="semesters.html">السمسترات</a></li>
+                    <li><a href="courses.html">المقررات</a></li>
+                    <li><a href="search.html">البحث</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>المحتوى</h4>
+                <ul>
+                    <li><a href="videos.html">الفيديوهات</a></li>
+                    <li><a href="books.html">الكتب والمراجع</a></li>
+                    <li><a href="login.html">تسجيل الدخول</a></li>
+                    <li><a href="register.html">إنشاء حساب</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>تواصل معنا</h4>
+                <ul>
+                    <li><a href="about.html">عن الموقع</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Math & CS Hub — جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
