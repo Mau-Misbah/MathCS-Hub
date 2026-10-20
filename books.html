@@ -8,6 +8,7 @@
 </head>
 <body>
 
+    <!-- ==================== Navbar ==================== -->
     <header class="navbar">
         <div class="container nav-container">
 
@@ -30,26 +31,28 @@
                 <a href="search.html" class="icon-btn" title="بحث">🔍</a>
                 <a href="login.html" class="btn btn-outline">تسجيل الدخول</a>
                 <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
-              <button class="hamburger" id="hamburger" aria-label="القائمة">
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
+
+                <button class="hamburger" id="hamburger" aria-label="القائمة">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
 
         </div>
     </header>
 
+    <!-- ==================== Page Header ==================== -->
     <section class="page-header">
         <div class="container">
             <h1>الكتب والمراجع</h1>
-            <p>مكتبة رقمية تحتوي على أهم الكتب والمراجع الدراسية.</p>
+            <p>مراجع مقترحة ومقررة من الدكاترة لكل مقرر.</p>
         </div>
     </section>
 
+    <!-- ==================== Filter Bar ==================== -->
     <section class="filter-bar">
         <div class="container filter-content">
-
             <div class="filter-group">
                 <label>التصنيف:</label>
                 <select id="filterCategory">
@@ -59,81 +62,88 @@
                     <option value="cs">علوم حاسوب</option>
                 </select>
             </div>
-
             <div class="filter-group">
                 <label>بحث:</label>
-                <input type="text" id="filterSearch" placeholder="اسم الكتاب أو المؤلف...">
+                <input type="text" id="filterSearch" placeholder="اسم الكتاب...">
             </div>
-
         </div>
     </section>
 
+    <!-- ==================== Books Grid ==================== -->
     <section class="section">
         <div class="container">
 
-            <div class="grid grid-4" id="booksGrid">
+            <div class="grid grid-3" id="booksGrid">
 
                 <div class="card book-card" data-category="stats">
-                    <div class="book-cover">📊</div>
+                    <div class="card-icon">📚</div>
                     <h3>Introduction to Statistics</h3>
-                    <p class="book-author">Sheldon Ross</p>
-                    <span class="book-tag">إحصاء</span>
+                    <p>مرجع رئيسي لمقرر الإحصاء.</p>
+                    <div class="book-meta"><span>👤 David Moore</span><span>📄 PDF</span></div>
+                    <a href="#" class="btn btn-primary">تحميل</a>
+                </div>
+
+                <div class="card book-card" data-category="math">
+                    <div class="card-icon">📚</div>
+                    <h3>Calculus Made Easy</h3>
+                    <p>شرح مبسط للتفاضل والتكامل.</p>
+                    <div class="book-meta"><span>👤 Silvanus Thompson</span><span>📄 PDF</span></div>
+                    <a href="#" class="btn btn-primary">تحميل</a>
+                </div>
+
+                <div class="card book-card" data-category="cs">
+                    <div class="card-icon">📚</div>
+                    <h3>Introduction to Algorithms</h3>
+                    <p>المرجع الأشهر في الخوارزميات.</p>
+                    <div class="book-meta"><span>👤 Thomas H. Cormen</span><span>📄 PDF</span></div>
+                    <a href="#" class="btn btn-primary">تحميل</a>
+                </div>
+
+                <div class="card book-card" data-category="cs">
+                    <div class="card-icon">📚</div>
+                    <h3>Clean Code</h3>
+                    <p>أساسيات كتابة كود نظيف.</p>
+                    <div class="book-meta"><span>👤 Robert C. Martin</span><span>📄 PDF</span></div>
+                    <a href="#" class="btn btn-primary">تحميل</a>
+                </div>
+
+                <div class="card book-card" data-category="cs">
+                    <div class="card-icon">📚</div>
+                    <h3>Database System Concepts</h3>
+                    <p>مرجع شامل لقواعد البيانات.</p>
+                    <div class="book-meta"><span>👤 Silberschatz</span><span>📄 PDF</span></div>
+                    <a href="#" class="btn btn-primary">تحميل</a>
+                </div>
+
+                <div class="card book-card" data-category="math">
+                    <div class="card-icon">📚</div>
+                    <h3>Linear Algebra Done Right</h3>
+                    <p>الجبر الخطي بأسلوب حديث.</p>
+                    <div class="book-meta"><span>👤 Sheldon Axler</span><span>📄 PDF</span></div>
                     <a href="#" class="btn btn-primary">تحميل</a>
                 </div>
 
                 <div class="card book-card" data-category="stats">
-                    <div class="book-cover">📈</div>
-                    <h3>Statistical Inference</h3>
-                    <p class="book-author">George Casella</p>
-                    <span class="book-tag">إحصاء</span>
-                    <a href="#" class="btn btn-primary">تحميل</a>
-                </div>
-
-                <div class="card book-card" data-category="math">
-                    <div class="book-cover">🧮</div>
-                    <h3>Calculus — Early Transcendentals</h3>
-                    <p class="book-author">James Stewart</p>
-                    <span class="book-tag">رياضيات</span>
-                    <a href="#" class="btn btn-primary">تحميل</a>
-                </div>
-
-                <div class="card book-card" data-category="math">
-                    <div class="book-cover">📐</div>
-                    <h3>Linear Algebra and Its Applications</h3>
-                    <p class="book-author">David C. Lay</p>
-                    <span class="book-tag">رياضيات</span>
+                    <div class="card-icon">📚</div>
+                    <h3>Probability and Statistics</h3>
+                    <p>الاحتمالات والإحصاء التطبيقي.</p>
+                    <div class="book-meta"><span>👤 Morris DeGroot</span><span>📄 PDF</span></div>
                     <a href="#" class="btn btn-primary">تحميل</a>
                 </div>
 
                 <div class="card book-card" data-category="cs">
-                    <div class="book-cover">💻</div>
-                    <h3>Introduction to Algorithms</h3>
-                    <p class="book-author">Cormen, Leiserson</p>
-                    <span class="book-tag">علوم حاسوب</span>
-                    <a href="#" class="btn btn-primary">تحميل</a>
-                </div>
-
-                <div class="card book-card" data-category="cs">
-                    <div class="book-cover">🖥️</div>
-                    <h3>Clean Code</h3>
-                    <p class="book-author">Robert C. Martin</p>
-                    <span class="book-tag">علوم حاسوب</span>
-                    <a href="#" class="btn btn-primary">تحميل</a>
-                </div>
-
-                <div class="card book-card" data-category="cs">
-                    <div class="book-cover">🗄️</div>
-                    <h3>Database System Concepts</h3>
-                    <p class="book-author">Silberschatz</p>
-                    <span class="book-tag">علوم حاسوب</span>
-                    <a href="#" class="btn btn-primary">تحميل</a>
-                </div>
-
-                <div class="card book-card" data-category="cs">
-                    <div class="book-cover">🤖</div>
+                    <div class="card-icon">📚</div>
                     <h3>Artificial Intelligence: A Modern Approach</h3>
-                    <p class="book-author">Russell & Norvig</p>
-                    <span class="book-tag">علوم حاسوب</span>
+                    <p>المرجع الرئيسي للذكاء الاصطناعي.</p>
+                    <div class="book-meta"><span>👤 Russell & Norvig</span><span>📄 PDF</span></div>
+                    <a href="#" class="btn btn-primary">تحميل</a>
+                </div>
+
+                <div class="card book-card" data-category="cs">
+                    <div class="card-icon">📚</div>
+                    <h3>Computer Networking</h3>
+                    <p>أساسيات شبكات الحاسوب.</p>
+                    <div class="book-meta"><span>👤 Kurose & Ross</span><span>📄 PDF</span></div>
                     <a href="#" class="btn btn-primary">تحميل</a>
                 </div>
 
@@ -144,6 +154,7 @@
         </div>
     </section>
 
+    <!-- ==================== Footer ==================== -->
     <footer class="footer">
         <div class="container footer-grid">
 
