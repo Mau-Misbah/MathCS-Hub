@@ -1243,6 +1243,22 @@ button, input, select, textarea {
     font-size: 0.85rem;
     color: #6b7280;
 }
+/* ============ Course Image ============ */
+.course-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #fff;
+    transition: var(--transition);
+}
+
+.card:hover .course-image {
+    transform: scale(1.1);
+    border-color: var(--primary-light);
+}
 
 /* ============ Responsive ============ */
 @media (max-width: 1024px) {
@@ -1406,7 +1422,7 @@ button, input, select, textarea {
 }
 /* ============ Hamburger Menu ============ */
 .hamburger {
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 5px;
     background: transparent;
@@ -1440,4 +1456,13 @@ button, input, select, textarea {
 
 .hamburger.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+}
+.course-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 3px solid #fff;
 }
